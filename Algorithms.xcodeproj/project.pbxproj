@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A0DAA3991B4D758700CA748C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3981B4D758700CA748C /* main.m */; };
+		A0DAA3A11B4D75BD00CA748C /* NSMutableArray+SelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3A01B4D75BD00CA748C /* NSMutableArray+SelectionSort.m */; };
+		A0DAA3AB1B4D77EE00CA748C /* AlgorithmsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3AA1B4D77EE00CA748C /* AlgorithmsTests.m */; };
+		A0DAA3B21B4D7AB600CA748C /* NSMutableArray+BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3B11B4D7AB600CA748C /* NSMutableArray+BubbleSort.m */; };
+		A0DAA3B61B4D7AF300CA748C /* NSMutableArray+InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3B51B4D7AF300CA748C /* NSMutableArray+InsertionSort.m */; };
+		A0DAA3B91B4D7B2C00CA748C /* NSMutableArray+MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3B81B4D7B2C00CA748C /* NSMutableArray+MergeSort.m */; };
+		A0DAA3BC1B4D7C3000CA748C /* NSMutableArray+Swap.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3BB1B4D7C3000CA748C /* NSMutableArray+Swap.m */; };
+		A0DAA3C01B4D7C6200CA748C /* NSMutableArray+BubbleSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3B11B4D7AB600CA748C /* NSMutableArray+BubbleSort.m */; };
+		A0DAA3C11B4D7C6200CA748C /* NSMutableArray+InsertionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3B51B4D7AF300CA748C /* NSMutableArray+InsertionSort.m */; };
+		A0DAA3C21B4D7C6200CA748C /* NSMutableArray+MergeSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3B81B4D7B2C00CA748C /* NSMutableArray+MergeSort.m */; };
+		A0DAA3C31B4D7C6200CA748C /* NSMutableArray+SelectionSort.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3A01B4D75BD00CA748C /* NSMutableArray+SelectionSort.m */; };
+		A0DAA3C41B4D7C6500CA748C /* NSMutableArray+Swap.m in Sources */ = {isa = PBXBuildFile; fileRef = A0DAA3BB1B4D7C3000CA748C /* NSMutableArray+Swap.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +36,30 @@
 /* Begin PBXFileReference section */
 		A0DAA3951B4D758700CA748C /* Algorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0DAA3981B4D758700CA748C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A0DAA39F1B4D75BD00CA748C /* NSMutableArray+SelectionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SelectionSort.h"; sourceTree = "<group>"; };
+		A0DAA3A01B4D75BD00CA748C /* NSMutableArray+SelectionSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SelectionSort.m"; sourceTree = "<group>"; };
+		A0DAA3A61B4D77EE00CA748C /* AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlgorithmsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A0DAA3A91B4D77EE00CA748C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0DAA3AA1B4D77EE00CA748C /* AlgorithmsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlgorithmsTests.m; sourceTree = "<group>"; };
+		A0DAA3B01B4D7AB600CA748C /* NSMutableArray+BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+BubbleSort.h"; sourceTree = "<group>"; };
+		A0DAA3B11B4D7AB600CA748C /* NSMutableArray+BubbleSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+BubbleSort.m"; sourceTree = "<group>"; };
+		A0DAA3B41B4D7AF300CA748C /* NSMutableArray+InsertionSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+InsertionSort.h"; sourceTree = "<group>"; };
+		A0DAA3B51B4D7AF300CA748C /* NSMutableArray+InsertionSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+InsertionSort.m"; sourceTree = "<group>"; };
+		A0DAA3B71B4D7B2C00CA748C /* NSMutableArray+MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+MergeSort.h"; sourceTree = "<group>"; };
+		A0DAA3B81B4D7B2C00CA748C /* NSMutableArray+MergeSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+MergeSort.m"; sourceTree = "<group>"; };
+		A0DAA3BA1B4D7C3000CA748C /* NSMutableArray+Swap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Swap.h"; sourceTree = "<group>"; };
+		A0DAA3BB1B4D7C3000CA748C /* NSMutableArray+Swap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Swap.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A0DAA3921B4D758700CA748C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DAA3A31B4D77EE00CA748C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				A0DAA3971B4D758700CA748C /* Algorithms */,
+				A0DAA3A71B4D77EE00CA748C /* AlgorithmsTests */,
 				A0DAA3961B4D758700CA748C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				A0DAA3951B4D758700CA748C /* Algorithms */,
+				A0DAA3A61B4D77EE00CA748C /* AlgorithmsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +90,44 @@
 		A0DAA3971B4D758700CA748C /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				A0DAA3B31B4D7ABC00CA748C /* Sort Categories */,
 				A0DAA3981B4D758700CA748C /* main.m */,
+				A0DAA3BA1B4D7C3000CA748C /* NSMutableArray+Swap.h */,
+				A0DAA3BB1B4D7C3000CA748C /* NSMutableArray+Swap.m */,
 			);
 			path = Algorithms;
+			sourceTree = "<group>";
+		};
+		A0DAA3A71B4D77EE00CA748C /* AlgorithmsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A0DAA3AA1B4D77EE00CA748C /* AlgorithmsTests.m */,
+				A0DAA3A81B4D77EE00CA748C /* Supporting Files */,
+			);
+			path = AlgorithmsTests;
+			sourceTree = "<group>";
+		};
+		A0DAA3A81B4D77EE00CA748C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0DAA3A91B4D77EE00CA748C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A0DAA3B31B4D7ABC00CA748C /* Sort Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A0DAA3B01B4D7AB600CA748C /* NSMutableArray+BubbleSort.h */,
+				A0DAA3B11B4D7AB600CA748C /* NSMutableArray+BubbleSort.m */,
+				A0DAA3B41B4D7AF300CA748C /* NSMutableArray+InsertionSort.h */,
+				A0DAA3B51B4D7AF300CA748C /* NSMutableArray+InsertionSort.m */,
+				A0DAA3B71B4D7B2C00CA748C /* NSMutableArray+MergeSort.h */,
+				A0DAA3B81B4D7B2C00CA748C /* NSMutableArray+MergeSort.m */,
+				A0DAA39F1B4D75BD00CA748C /* NSMutableArray+SelectionSort.h */,
+				A0DAA3A01B4D75BD00CA748C /* NSMutableArray+SelectionSort.m */,
+			);
+			name = "Sort Categories";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +150,23 @@
 			productReference = A0DAA3951B4D758700CA748C /* Algorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		A0DAA3A51B4D77EE00CA748C /* AlgorithmsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A0DAA3AC1B4D77EE00CA748C /* Build configuration list for PBXNativeTarget "AlgorithmsTests" */;
+			buildPhases = (
+				A0DAA3A21B4D77EE00CA748C /* Sources */,
+				A0DAA3A31B4D77EE00CA748C /* Frameworks */,
+				A0DAA3A41B4D77EE00CA748C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlgorithmsTests;
+			productName = AlgorithmsTests;
+			productReference = A0DAA3A61B4D77EE00CA748C /* AlgorithmsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +177,9 @@
 				ORGANIZATIONNAME = "Groomsy Dev";
 				TargetAttributes = {
 					A0DAA3941B4D758700CA748C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					A0DAA3A51B4D77EE00CA748C = {
 						CreatedOnToolsVersion = 6.4;
 					};
 				};
@@ -109,16 +197,45 @@
 			projectRoot = "";
 			targets = (
 				A0DAA3941B4D758700CA748C /* Algorithms */,
+				A0DAA3A51B4D77EE00CA748C /* AlgorithmsTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A0DAA3A41B4D77EE00CA748C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0DAA3911B4D758700CA748C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0DAA3A11B4D75BD00CA748C /* NSMutableArray+SelectionSort.m in Sources */,
+				A0DAA3B91B4D7B2C00CA748C /* NSMutableArray+MergeSort.m in Sources */,
+				A0DAA3BC1B4D7C3000CA748C /* NSMutableArray+Swap.m in Sources */,
+				A0DAA3B61B4D7AF300CA748C /* NSMutableArray+InsertionSort.m in Sources */,
 				A0DAA3991B4D758700CA748C /* main.m in Sources */,
+				A0DAA3B21B4D7AB600CA748C /* NSMutableArray+BubbleSort.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0DAA3A21B4D77EE00CA748C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A0DAA3C31B4D7C6200CA748C /* NSMutableArray+SelectionSort.m in Sources */,
+				A0DAA3AB1B4D77EE00CA748C /* AlgorithmsTests.m in Sources */,
+				A0DAA3C41B4D7C6500CA748C /* NSMutableArray+Swap.m in Sources */,
+				A0DAA3C11B4D7C6200CA748C /* NSMutableArray+InsertionSort.m in Sources */,
+				A0DAA3C21B4D7C6200CA748C /* NSMutableArray+MergeSort.m in Sources */,
+				A0DAA3C01B4D7C6200CA748C /* NSMutableArray+BubbleSort.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +333,38 @@
 			};
 			name = Release;
 		};
+		A0DAA3AD1B4D77EE00CA748C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AlgorithmsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A0DAA3AE1B4D77EE00CA748C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AlgorithmsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -233,6 +382,14 @@
 			buildConfigurations = (
 				A0DAA39D1B4D758700CA748C /* Debug */,
 				A0DAA39E1B4D758700CA748C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A0DAA3AC1B4D77EE00CA748C /* Build configuration list for PBXNativeTarget "AlgorithmsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0DAA3AD1B4D77EE00CA748C /* Debug */,
+				A0DAA3AE1B4D77EE00CA748C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
