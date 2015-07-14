@@ -12,6 +12,7 @@
 
 @property (nonatomic, readonly) NSArray *points;
 
++ (instancetype)divideAndConquerSkylineFromBuildings:(NSArray *)buildings;
 + (instancetype)skylineFromBuildings:(NSArray *)buildings;
 
 - (instancetype)initWithPoints:(NSArray *)points;

@@ -19,6 +19,36 @@
 
 @implementation Skyline
 
++ (instancetype)divideAndConquerSkylineFromBuildings:(NSArray *)buildings {
+    
+    return [Skyline divideAndConquerSkylineFromBuildings:buildings leftBoundBuildingIndex:0 rightBoundBuildingIndex:( buildings.count - 1 )];
+}
+
++ (instancetype)divideAndConquerSkylineFromBuildings:(NSArray *)buildings leftBoundBuildingIndex:(NSUInteger)leftBoundBuildingIndex rightBoundBuildingIndex:(NSUInteger)rightBoundBuildingIndex {
+    
+    if ( leftBoundBuildingIndex == rightBoundBuildingIndex ) {
+        
+        Building *building = buildings[leftBoundBuildingIndex];
+        return [[Skyline alloc] initWithPoints:@[
+                                                 [[SkylinePoint alloc] initWithX:building.left height:building.height],
+                                                 [[SkylinePoint alloc] initWithX:building.right height:0]
+                                                ]];
+    }
+    
+    NSUInteger pivot = leftBoundBuildingIndex + ( rightBoundBuildingIndex - leftBoundBuildingIndex ) / 2;
+    Skyline *leftSkyline = [Skyline divideAndConquerSkylineFromBuildings:buildings leftBoundBuildingIndex:leftBoundBuildingIndex rightBoundBuildingIndex:pivot];
+    Skyline *rightSkyline = [Skyline divideAndConquerSkylineFromBuildings:buildings leftBoundBuildingIndex:( pivot + 1 ) rightBoundBuildingIndex:rightBoundBuildingIndex];
+    Skyline *skyline = [Skyline mergeSkyline:leftSkyline withSkyline:rightSkyline];
+    
+    return skyline;
+}
+
++ (instancetype)mergeSkyline:(Skyline *)leftSkyline withSkyline:(Skyline *)rightSkyline {
+    
+    // TODO Implement
+    return nil;
+}
+
 + (instancetype)skylineFromBuildings:(NSArray *)buildings {
 
     if ( buildings.count == 0 ) {
