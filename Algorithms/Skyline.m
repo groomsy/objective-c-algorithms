@@ -38,15 +38,61 @@
     NSUInteger pivot = leftBoundBuildingIndex + ( rightBoundBuildingIndex - leftBoundBuildingIndex ) / 2;
     Skyline *leftSkyline = [Skyline divideAndConquerSkylineFromBuildings:buildings leftBoundBuildingIndex:leftBoundBuildingIndex rightBoundBuildingIndex:pivot];
     Skyline *rightSkyline = [Skyline divideAndConquerSkylineFromBuildings:buildings leftBoundBuildingIndex:( pivot + 1 ) rightBoundBuildingIndex:rightBoundBuildingIndex];
-    Skyline *skyline = [Skyline mergeSkyline:leftSkyline withSkyline:rightSkyline];
-    
-    return skyline;
+    return [Skyline mergeSkyline:leftSkyline withSkyline:rightSkyline];
 }
 
 + (instancetype)mergeSkyline:(Skyline *)leftSkyline withSkyline:(Skyline *)rightSkyline {
     
-    // TODO Implement
-    return nil;
+    NSMutableArray *points = [NSMutableArray arrayWithCapacity:( leftSkyline.points.count + rightSkyline.points.count )];
+    
+    NSUInteger leftHeight = 0, rightHeight = 0;
+    
+    NSUInteger leftIterator = 0, rightIterator = 0;
+    while ( leftIterator < leftSkyline.points.count && rightIterator < rightSkyline.points.count ) {
+        
+        SkylinePoint *leftSkylinePoint = leftSkyline.points[leftIterator];
+        SkylinePoint *rightSkylinePoint = rightSkyline.points[rightIterator];
+        if ( leftSkylinePoint.x < rightSkylinePoint.x ) {
+            
+            leftHeight = leftSkylinePoint.height;
+
+            NSUInteger x = leftSkylinePoint.x;
+            NSUInteger height = MAX(leftHeight, rightHeight);
+            
+            // FIXME
+            // This check is incorrect; This check excludes where the right building has a height and the intersecting left building drops below or to 0.
+            if ( height == leftHeight ) {
+
+                [points addObject:[[SkylinePoint alloc] initWithX:x height:height]];
+            }
+            ++leftIterator;
+        }
+        else {
+            
+            rightHeight = rightSkylinePoint.height;
+            
+            NSUInteger x = rightSkylinePoint.x;
+            NSUInteger height = MAX(leftHeight, rightHeight);
+            
+            if ( height == rightHeight ) {
+
+                [points addObject:[[SkylinePoint alloc] initWithX:x height:height]];
+            }
+            ++rightIterator;
+        }
+    }
+    
+    while ( leftIterator < leftSkyline.points.count ) {
+        
+        [points addObject:leftSkyline.points[leftIterator++]];
+    }
+    
+    while ( rightIterator < rightSkyline.points.count ) {
+        
+        [points addObject:rightSkyline.points[rightIterator++]];
+    }
+    
+    return [[Skyline alloc] initWithPoints:points];
 }
 
 + (instancetype)skylineFromBuildings:(NSArray *)buildings {
