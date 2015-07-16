@@ -47,6 +47,7 @@
     
     NSUInteger leftHeight = 0, rightHeight = 0;
     
+    NSUInteger previousHeight = 0;
     NSUInteger leftIterator = 0, rightIterator = 0;
     while ( leftIterator < leftSkyline.points.count && rightIterator < rightSkyline.points.count ) {
         
@@ -59,10 +60,9 @@
             NSUInteger x = leftSkylinePoint.x;
             NSUInteger height = MAX(leftHeight, rightHeight);
             
-            // FIXME
-            // This check is incorrect; This check excludes where the right building has a height and the intersecting left building drops below or to 0.
-            if ( height == leftHeight ) {
+            if ( height != previousHeight ) {
 
+                previousHeight = height;
                 [points addObject:[[SkylinePoint alloc] initWithX:x height:height]];
             }
             ++leftIterator;
@@ -74,8 +74,9 @@
             NSUInteger x = rightSkylinePoint.x;
             NSUInteger height = MAX(leftHeight, rightHeight);
             
-            if ( height == rightHeight ) {
-
+            if ( height != previousHeight ) {
+                
+                previousHeight = height;
                 [points addObject:[[SkylinePoint alloc] initWithX:x height:height]];
             }
             ++rightIterator;
